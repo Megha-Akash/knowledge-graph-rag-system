@@ -1,0 +1,24 @@
+neo4j:
+  uri: bolt://YOUR_NEO4J_HOST
+  user: neo4j
+  password: YOUR_PASSWORD
+
+llm:
+  backend: ollama          # options: ollama, huggingface, vllm, sglang
+  model: gemma3:27b        # ollama model name
+  endpoint: http://YOUR_OLLAMA_HOST
+  temperature: 0.1
+  max_tokens: 1500
+
+embedder:
+  model: all-MiniLM-L6-v2  # sentence-transformers model
+
+data:
+  corpus_path: data/hotpotqa_corpus.json   # path to corpus JSON
+  query_path: data/hotpotqa.json           # path to queries JSON
+
+kg_builder:
+  max_docs: null           # null = process all, set integer for testing e.g. 100
+  batch_size: 10           # docs per checkpoint save
+  checkpoint_path: outputs/checkpoints/kg_build_checkpoint.json
+  output_dir: outputs/kg_builder
