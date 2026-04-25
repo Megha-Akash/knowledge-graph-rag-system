@@ -1,6 +1,5 @@
 """
 Prompt Templates for KG Extraction
-Cleaned up version of the FZI extraction prompt.
 Returns entities with label + properties dict, relations with start_entity/end_entity/label.
 """
 
