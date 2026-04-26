@@ -129,8 +129,6 @@ python scripts/run_rag.py --question "Who created Sherlock Holmes?"
 # With verbose step-by-step output
 python scripts/run_rag.py --question "Who created Sherlock Holmes?" --verbose
 
-# Interactive mode
-python scripts/run_rag.py --interactive
 ```
 
 ### Example Output
